@@ -137,8 +137,7 @@ nav ul{
   background-color: burlywood;
   text-decoration: underline;
   text-decoration-style: wavy;
-  font-size: 9px;
-  text-transform: uppercase;
+  font-size: 10px;
   border-radius: 5px;
 }
 
@@ -163,10 +162,10 @@ img:hover{
   ;
   font-family: "Verdana", sans-serif;
   display: grid;
-  row-gap: 80px;
+  row-gap: 40px;
   justify-content: center;
   grid-template-columns: 15% 70% 15%;
-  grid-template-rows: 2.8% 92%;
+  grid-template-rows: 5% 95%;
 }
 #Breed>p,#Home>p{
   grid-column: 2;
@@ -228,8 +227,9 @@ img:hover{
   align-items: baseline;
 }
 /* Flip card on Interesting*/
+/* Flip card on Interesting*/
 .flip-card {
-  font-size: 13px;
+  
   background-color: transparent;
   border-radius: 30px;
   border: 3px solid #f1f1f1;
@@ -241,7 +241,16 @@ img:hover{
   align-items: center;
 }
 
-
+.flip-card-inner {
+  /* This container is
+ needed to position the front and back side */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
 
 .flip-card-front, .flip-card-back {
   /* Position the 
@@ -267,6 +276,16 @@ side (fallback if image is missing) */
 }
 .flip-card-front>h1{
   grid-row: 2;
+
+}
+.flip-card-front>button{
+  grid-row: 3;
+  width: 200px;
+  height: 20%;
+  text-align: center;
+  border-radius: 30px;
+  
+  border: 3px solid #f1f1f1;
 }
 .flip-card-back {
   top: 10%;
@@ -276,24 +295,20 @@ side (fallback if image is missing) */
   justify-content: space-around;
   /* Style the back side */
   color: #444c4e  ;
-  transform: rotateY(180deg);
+  display: none;
+  /* transform: rotateY(180deg); */
 }
 .flip-card-back>p{
   text-align: left;
   grid-column: 2;
   grid-row: 1;
 }
-.flip-card-inner {
-  /* This container is
- needed to position the front and back side */
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  text-align: left;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
 
+/*
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  transition-delay: 200ms;
+}*/
 /*==============================================*/
 
 /*stage 5*/

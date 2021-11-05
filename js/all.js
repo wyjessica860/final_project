@@ -66,9 +66,17 @@ function show_slide3(n) {
 	x1[slide_I3-1].style.display = "block";   
 	
 	}
-function flip_card(){
-	document.getElementsByClassName("flip-card-front")[0]
-    .onclick = function(){
-    this.classList.toggle("active")
-    }
+flip_card1();
+	
+function flip_card1(n){
+	var x1 = document.getElementsByClassName("flip-card-front");
+	x1[n].style.display = "none";
+	var x1 = document.getElementsByClassName("flip-card-back");
+	x1[n].style.display = "block";
+}
+function flip_card2(n){
+	var x1 = document.getElementsByClassName("flip-card-front");
+	x1[n].style.display = "block";
+	var x1 = document.getElementsByClassName("flip-card-back");
+	x1[n].style.display = "none";
 }
