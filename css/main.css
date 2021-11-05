@@ -235,7 +235,7 @@ img:hover{
   border: 3px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   width: 400px;
-  height: 300px;
+  height: 500px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -282,20 +282,21 @@ side (fallback if image is missing) */
   grid-row: 1;
   width: 80px;
   height: 50%;
-  text-align: ;
+  text-align: left;
   border-radius: 30px;
   background-color: beige;
   border: 3px solid #f1f1f1;
 }
 .flip-card-back {
-  top: 10%;
+  top: 5%;
   display: grid;
   grid-template-columns: 15% 70% 15%;
-  width: 100%;
+  width: 80%;
   justify-content: space-around;
   /* Style the back side */
   color: #444c4e  ;
   display: none;
+
   /* transform: rotateY(180deg); */
 }
 .flip-card-back>p{
