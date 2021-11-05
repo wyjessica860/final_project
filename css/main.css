@@ -235,7 +235,7 @@ img:hover{
   border: 3px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   width: 400px;
-  height: 500px;
+  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -275,7 +275,7 @@ side (fallback if image is missing) */
   color: #6b6769;
 }
 .flip-card-front>h1{
-  
+  width: 80%;
   grid-row: 2;
 }
 .flip-card-front>button{
