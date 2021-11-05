@@ -74,12 +74,6 @@ main{
 }
 #Home{
   color: #6b6769;
-  display: grid;
-  justify-content: center;
-  text-align: center;
-  grid-template-columns: 15% 70% 15%;
-  grid-template-rows: 30% 50%;
-  row-gap: 40px;
 }
 
 .home-image{
@@ -138,14 +132,12 @@ nav ul{
   color: #3A1D03;
   text-align: center;
 }
-.sidebar-item:hover{
-  color:#faf3de;
-  text-decoration: underline;
-  text-decoration-style: wavy;
-}
 
 #active{
   background-color: burlywood;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  font-size: 9px;
   text-transform: uppercase;
   border-radius: 5px;
 }
@@ -171,7 +163,7 @@ img:hover{
   ;
   font-family: "Verdana", sans-serif;
   display: grid;
-  row-gap: 40px;
+  row-gap: 80px;
   justify-content: center;
   grid-template-columns: 15% 70% 15%;
   grid-template-rows: 2.8% 92%;
@@ -237,7 +229,7 @@ img:hover{
 }
 /* Flip card on Interesting*/
 .flip-card {
-  
+  font-size: 13px;
   background-color: transparent;
   border-radius: 30px;
   border: 3px solid #f1f1f1;
@@ -250,12 +242,6 @@ img:hover{
 }
 
 
-.flip-card:hover .flip-card-inner {
-  /* Do an horizontal fli
-p when you move the mouse over the flip box container */
-  transform: rotateY(180deg);
-  transition-delay: 200ms;
-}
 
 .flip-card-front, .flip-card-back {
   /* Position the 
@@ -369,6 +355,8 @@ side (fallback if image is missing) */
 
 .photoSlides2, .photoSlides1, .photoSlides3{
   text-align: center;
+  border: #76323F 3px solid ;
+  border-radius: 1px;
 }
 
 .left_button ,.right_button{
@@ -387,7 +375,17 @@ header:not(div>header){
   justify-content: space-between;
 }
 
+.sidebar-item:hover{
+  color:#faf3de;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
 
+#active{
+  background-color: burlywood;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
 
 .Dogs{
   display: flex;
@@ -428,6 +426,14 @@ nav li:nth-child(4){
 }
 nav li:nth-child(5){
   grid-column: 4/ span 1;
+}
+
+
+.flip-card:hover .flip-card-inner {
+  /* Do an horizontal fli
+p when you move the mouse over the flip box container */
+  transform: rotateY(180deg);
+  transition-delay: 200ms;
 }
 }
 

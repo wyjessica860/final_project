@@ -66,3 +66,9 @@ function show_slide3(n) {
 	x1[slide_I3-1].style.display = "block";   
 	
 	}
+function flip_card(){
+	document.getElementsByClassName("flip-card-front")[0]
+    .onclick = function(){
+    this.classList.toggle("active")
+    }
+}
