@@ -3,7 +3,7 @@ html {
 }
 body{
   font-family: 'Corben', cursive;
-  background: url('../images/531635881288_.pic_hd.jpg');  
+  background: url('../images/531635881288_.pic_hd.png');  
   background-color: #f1f1f1;
   background-size: cover;
   margin: 0;
@@ -281,7 +281,7 @@ side (fallback if image is missing) */
 .flip-card-front>button{
   font-size: 10px;
   grid-row: 1;
-  width: 15%;
+  width: 80px;
   height: 50%;
   text-align: left;
   border-radius: 30px;
