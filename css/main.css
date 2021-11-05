@@ -281,7 +281,7 @@ side (fallback if image is missing) */
 .flip-card-front>button{
   font-size: 10px;
   grid-row: 1;
-  width: auto;
+  width: 15%;
   height: 50%;
   text-align: left;
   border-radius: 30px;
