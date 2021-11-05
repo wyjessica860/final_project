@@ -275,7 +275,6 @@ side (fallback if image is missing) */
   color: #6b6769;
 }
 .flip-card-front>h1{
-  width: 80%;
   grid-row: 2;
 }
 .flip-card-front>button{
@@ -288,10 +287,9 @@ side (fallback if image is missing) */
   border: 3px solid #f1f1f1;
 }
 .flip-card-back {
-  top: 5%;
   display: grid;
   grid-template-columns: 15% 70% 15%;
-  width: 80%;
+  width: 70%;
   justify-content: space-around;
   /* Style the back side */
   color: #444c4e  ;
