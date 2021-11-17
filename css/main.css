@@ -72,8 +72,10 @@ main{
   animation-name: fadeIn;
   animation-duration: 3s; 
 }
-#Home{
+#home{
   color: #6b6769;
+  display: grid;
+  grid-template-rows: 50% 50%;
 }
 
 .home-image{
@@ -83,7 +85,7 @@ main{
   width: 80%;
 }
 
-#Home-p{
+#home-p{
   color: #635858;
   padding: 0 30px;
   font-size: 13pt;
@@ -156,7 +158,7 @@ img:hover{
 
 /*stage 3*/
 
-#Breed {
+#breed {
   font-size: 15px;
   color: #524039fd
   ;
@@ -167,11 +169,11 @@ img:hover{
   grid-template-columns: 15% 70% 15%;
   grid-template-rows: 5% 95%;
 }
-#Breed>p,#Home>p{
+#breed>p,#home>p{
   grid-column: 2;
   grid-row: 1;
 }
-#Breed>div,#Home>div{
+#breed>div,#home>div{
   grid-column: 2;
   grid-row: 2;
 }
@@ -180,7 +182,7 @@ img:hover{
     width: 500px;
     height: auto;
 }
-.Dogs{
+.dogs{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -188,14 +190,14 @@ img:hover{
   align-items: baseline;
 }
 
-.Dogs>div{
+.dogs>div{
   border: 3px #935135 dotted 
   ;
 }
 /*==============================================*/
 
 /*stage 4*/
-#IF{
+#if{
   font-size: 15px;
   color: #524039fd;
   font-family: "Verdana", sans-serif;
@@ -206,16 +208,16 @@ img:hover{
   grid-template-columns: 15% 70% 15%;
   grid-template-rows: 5% 95%;
 }
-#IF>p {
+#if>p {
   text-align: left;
   grid-column: 2;
   grid-row: 1;
 }
-#IF>div{
+#if>div{
   grid-column: 2;
   grid-row: 2;
 }
-.IF_a{
+.if_a{
   font-weight: bolder;
   background-color: none;
 }
@@ -311,7 +313,7 @@ side (fallback if image is missing) */
 /*==============================================*/
 
 /*stage 5*/
-#Dis {
+#dis {
   font-size: 15px;
   color: #524039fd
   ;
@@ -323,7 +325,7 @@ side (fallback if image is missing) */
   grid-template-rows: 10% 90%;
   row-gap: 40px;
 }
-#Dis>p {
+#dis>p {
   text-align: left;
   grid-column: 2;
   grid-row: 1;
@@ -342,7 +344,7 @@ side (fallback if image is missing) */
   ;
   
 }
-#Story {
+#story {
   font-size: 15px;
   color: #524039fd
   ;
@@ -355,7 +357,7 @@ side (fallback if image is missing) */
   row-gap: 40px;
 }
 
-#Story>p{
+#story>p{
   text-align: left;
   grid-column: 2;
   grid-row: 1;
@@ -401,14 +403,14 @@ header:not(div>header){
   border-radius: 5px;
 }
 
-.Dogs{
+.dogs{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: baseline;
 }
-.Dogs>div{
+.dogs>div{
   flex-basis: 400px;
 }
 
