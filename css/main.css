@@ -575,4 +575,18 @@ p when you move the mouse over the flip box container */
 }
 }
 
+@media screen and (prefers-reduced-motion: reduce){
+  img{
+    animation: none;
+ }
+ h1{
+     animation: none;
+ }
+ html{
+  scroll-behavior: auto; 
+}
+ body{
+  background-attachment: initial;
+}
+}
 
