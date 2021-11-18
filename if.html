@@ -24,14 +24,14 @@
 
   <body>
     <header>
-      <div class="skip"><a href="#I">Skip to Main Content</a></div>
+      <div class="skip"><a href="#if">Skip to Main Content</a></div>
       <nav class="sidebar">
         <ul>       
           <li><a class="sidebar-item" href = "index.html">Home</a></li>
-          <li><a  class="sidebar-item" id = "active"  href="IF_1.html">Interesting Facts</a></li>
-          <li><a class="sidebar-item" href="Breed.html">Breed</a></li>
+          <li><a  class="sidebar-item" id = "active"  href="if.html">Interesting Facts</a></li>
+          <li><a class="sidebar-item" href="breed.html">Breed</a></li>
           <li><a  class="sidebar-item"  href="story.html">Movie</a></li>
-          <li><a  class="sidebar-item"  href="train.html">Discriminination</a></li>
+          <li><a  class="sidebar-item"  href="dis.html">Discriminination</a></li>
           
         </ul>
         
@@ -47,14 +47,14 @@
         <p>
           Guide dogs are true stand outs. 
           Let's dig deep into the facts about this responsible and intelligent feature. 
-          <a class = "if_a">Flip each card below to explore in detail.</a>
+          <a class = "if_a">Open each card below to explore in detail.</a>
         These information will help you know them better.
         </p>  
       <div class="flip-card-list">
         <div class="flip-card" >
           <div class="flip-card-inner">
-              <div class="flip-card-front" >
-                <button class="button" onclick="flip_card1(0)">Click! 🐾</button>
+              <div class="flip-card-front" onclick="flip_card1(0)">
+                <button class="button">Click! 🐾</button>
                 <h1>Ancestors</h1>
               </div>
               <div class="flip-card-back">
@@ -69,8 +69,8 @@
       
         <div class="flip-card">
           <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <button class="button" onclick="flip_card1(1)">Click! &#129460;</button>
+              <div class="flip-card-front" onclick="flip_card1(1)">
+                <button class="button">Click! &#129460;</button>
                 <h1>Well Trained</h1>
                 
               </div>
@@ -85,8 +85,8 @@
         </div>
         <div class="flip-card">
           <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <button class="button" onclick="flip_card1(2)">Click! &#129460;</button>
+              <div class="flip-card-front" onclick="flip_card1(2)">
+                <button class="button">Click! &#129460;</button>
 
                 <h1>Think Critically</h1>
                 
@@ -100,8 +100,8 @@
         </div>       
          <div class="flip-card">
           <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <button class="button" onclick="flip_card1(3)">Click! 🐾</button>
+              <div class="flip-card-front" onclick="flip_card1(3)">
+                <button class="button" >Click! 🐾</button>
 
                 <h1>Rest and Retire</h1>
                 
@@ -115,8 +115,8 @@
         </div>
         <div class="flip-card">
           <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <button class="button" onclick="flip_card1(4)">Click! &#129460;</button>
+              <div class="flip-card-front" onclick="flip_card1(4)">
+                <button class="button" >Click! &#129460;</button>
 
                 <h1>More than guiding</h1>
                 
@@ -131,8 +131,8 @@
         </div>
         <div class="flip-card">
           <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <button class="button" onclick="flip_card1(5)">Click! 🐾</button>
+              <div class="flip-card-front" onclick="flip_card1(5)">
+                <button class="button">Click! 🐾</button>
 
                 <h1>Things beyond ability</h1>
                 
@@ -156,25 +156,6 @@
 
       
 	  </footer>
-    
-    <script>
-      var mini = true;
-
-      function toggleSidebar() {
-          if (mini) {
-              console.log("opening sidebar");
-              document.getElementById("mySidebar").style.width = "250px";
-              document.getElementById("main").style.marginLeft = "250px";
-              this.mini = false;
-          } else {
-              console.log("closing sidebar");
-              document.getElementById("mySidebar").style.width = "85px";
-              document.getElementById("main").style.marginLeft = "85px";
-              this.mini = true;
-          }
-      }
-  </script>
-
 
     <script src="js/all.js"></script>
   </body>

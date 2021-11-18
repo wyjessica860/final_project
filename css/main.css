@@ -3,8 +3,11 @@ html {
 }
 body{
   font-family: 'Corben', cursive;
-  background: url('../images/531635881288_.pic_hd.png');  
+  background: url('../images/531635881288_.pic_hd.png') no-repeat center center fixed;  
   background-color: #f1f1f1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -14,7 +17,7 @@ body{
   display: none;
 }*/
 main{
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 .skip a{
   background: white;
@@ -75,20 +78,23 @@ main{
 #home{
   color: #6b6769;
   display: grid;
-  grid-template-rows: 40% 60%;
+  grid-template-rows: 0.5fr 0.5fr;
+  row-gap: 60px;
+  justify-items: center;
 }
 
 .home-image{
 
-  margin-left: auto;
-  margin-right: auto;
   width: 80%;
 }
-
+#home>div{
+  grid-row: 2;
+}
 #home-p{
+  grid-row: 1;
   color: #635858;
   padding: 0 30px;
-  font-size: 13pt;
+  font-size: 15pt;
 }
 /*==============================================*/
 /*stage 2*/
@@ -164,16 +170,17 @@ img:hover{
   ;
   font-family: "Verdana", sans-serif;
   display: grid;
-  row-gap: 40px;
+
   justify-content: center;
   grid-template-columns: 15% 70% 15%;
-  grid-template-rows: 5% 95%;
+  grid-template-rows: 0.1fr 0.5fr;
+  row-gap: 30px;
 }
-#breed>p,#home>p{
+#breed>p{
   grid-column: 2;
   grid-row: 1;
 }
-#breed>div,#home>div{
+#breed>div{
   grid-column: 2;
   grid-row: 2;
 }
@@ -202,11 +209,11 @@ img:hover{
   color: #524039fd;
   font-family: "Verdana", sans-serif;
   display: grid;
-  row-gap: 40px;
   justify-content: center;
   text-align: center;
   grid-template-columns: 15% 70% 15%;
-  grid-template-rows: 5% 95%;
+  grid-template-rows: 0.1fr 2.5fr;
+  row-gap: 30px;
 }
 #if>p {
   text-align: left;
@@ -237,7 +244,7 @@ img:hover{
   border: 3px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   width: 400px;
-  height: 350px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -271,38 +278,42 @@ front and back side */
 side (fallback if image is missing) */
 .flip-card-front {
   display: grid;
-  grid-template-rows: 30% 30% 30%;
+  grid-template-rows: 0.5fr 0.8fr 0.5fr;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
   border-radius: 30px;
   background-color: #c5bcc0  ;
   color: #6b6769;
 }
-.flip-card-front>h1{
-  
-  grid-row: 2;
-}
 .flip-card-front>button{
-  font-size: 10px;
-  grid-row: 1;
+  font-size: 13px;
+  grid-row: 3;
+  grid-column: 2;
   width: 80px;
-  height: 50%;
-  text-align: left;
+  height: 60px;
+  align-self: start;
+  justify-self: center;
   border-radius: 30px;
   background-color: beige;
   border: 3px solid #f1f1f1;
 }
+.flip-card-front>h1{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+
 .flip-card-back {
-  top: 5%;
+  font-size: 15px;
+  top: 10%;
   width: 85%;
   margin-left:10%;
   /* Style the back side */
   color: #444c4e  ;
   display: none;
-
   /* transform: rotateY(180deg); */
 }
 .flip-card-back>p{
   text-align: left;
-
 }
 
 /*
@@ -321,18 +332,23 @@ side (fallback if image is missing) */
   justify-content: center;
   text-align: center;
   grid-template-columns: 15% 70% 15%;
-  grid-template-rows: 10% 90%;
-  row-gap: 40px;
+  grid-template-rows: 0.1fr 0.5fr 1fr;
+  row-gap: 30px;
 }
 #dis>p {
   text-align: left;
   grid-column: 2;
   grid-row: 1;
 }
-#news{
-  text-align: left;
+.dis-img{
+  text-align: center;
   grid-column: 2;
   grid-row: 2;
+}
+.news-text{
+  text-align: left;
+  grid-column: 2;
+  grid-row: 3;
 }
 #img-text{
   position: absolute;
@@ -344,13 +360,13 @@ side (fallback if image is missing) */
   
 }
 #story {
-  font-size: 10px;
+  font-size: 15px;
   color: #524039fd;
   font-family: "Verdana", sans-serif;
   display: grid;
   grid-template-columns: 15% 70% 15%;
   grid-template-rows: 0.5fr 0.1fr 0.5fr 0.1fr 1fr 0.1fr 1fr;
-  row-gap: 30px;
+  row-gap: 40px;
   justify-items: center;
 }
 
@@ -395,12 +411,13 @@ side (fallback if image is missing) */
   text-align: center;
   border: #76323F 3px solid ;
   border-radius: 1px;
-  width: 250px;
-  height: 160px;
+  width: 100%;
+  height: 270px;
 }
 .story-img1>img,.story-img2>img,.story-img3>img{
-  width: 220px;
-  height: 140px;
+  width: auto;
+  height: 220px;
+  margin-top: 10px;
 }
 
 .left_button ,.right_button{
@@ -413,11 +430,59 @@ side (fallback if image is missing) */
 /*==========================================*/
 /* tablet*/
 @media screen and (min-width: 850px){
+  nav{
+    width: 100%;
+    
+  }
+  nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+  
+  
+  }
+  nav li:nth-child(1){
+    grid-column: 1/ span 1;
+  }
+  nav li:nth-child(2){
+    grid-column: 3/ span 1;
+  }
+  nav li:nth-child(3){
+    grid-column: 5/ span 1;
+  }
+  nav li:nth-child(4){
+    grid-column: 2/ span 1;
+  }
+  nav li:nth-child(5){
+    grid-column: 4/ span 1;
+  }
+  
+  
+  .dogs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
+  .dogs>div{
+    flex-basis: 400px;
+  }
+  
+  .dis-img>img {
+    width: 590px;
+    height: 353px;
+  }
+  .home-image{
 
+    width: 650px;
+  }
  /* story */ 
   #story {
-    grid-template-columns: 10% 30% 5% 40% 10%;
-    grid-template-rows: 0.3fr 0.8fr 1fr 1fr;
+    grid-template-columns: 10% 40% 5% 40% 10%;
+    grid-template-rows: 0.3fr 0.6fr 0.8fr 0.8fr;
   }
   
   #story>p{
@@ -462,10 +527,14 @@ side (fallback if image is missing) */
   }
 
   .photoslides2, .photoslides1, .photoslides3{
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: 300px;
+    align-self: stretch;
   }
-  
+  .story-img1>img,.story-img2>img,.story-img3>img{
+    width: 400px;
+    height: 250px;
+  }
  /* ======================================================== */ 
 header:not(div>header){
   flex-direction: row;
@@ -484,48 +553,19 @@ header:not(div>header){
   text-transform: uppercase;
   border-radius: 5px;
 }
-
-.dogs{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: baseline;
-}
-.dogs>div{
-  flex-basis: 400px;
+.flip-card-front>button{
+  display: none;
 }
 
-
-nav{
-  width: 100%;
-  
+.flip-card-back {
+  top: 5%;
+  width: 85%;
+  margin-left:10%;
+  /* Style the back side */
+  color: #444c4e  ;
+  display: block;
+  transform: rotateY(180deg);
 }
-nav ul{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-  justify-content: center;
-  align-items:center;
-  text-align:center;
-
-
-}
-nav li:nth-child(1){
-  grid-column: 1/ span 1;
-}
-nav li:nth-child(2){
-  grid-column: 3/ span 1;
-}
-nav li:nth-child(3){
-  grid-column: 5/ span 1;
-}
-nav li:nth-child(4){
-  grid-column: 2/ span 1;
-}
-nav li:nth-child(5){
-  grid-column: 4/ span 1;
-}
-
 
 .flip-card:hover .flip-card-inner {
   /* Do an horizontal fli
