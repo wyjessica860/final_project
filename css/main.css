@@ -14,7 +14,7 @@ body{
   display: none;
 }*/
 main{
-  margin-bottom: 200px;
+  margin-bottom: 60px;
 }
 .skip a{
   background: white;
@@ -40,7 +40,7 @@ h1{
   }
 footer{
   color: white;
-  font-size: 10px;
+  font-size: 14px;
   text-align: center;
   background-color: #485a5ac4  ;
   width:100%;
@@ -75,11 +75,11 @@ main{
 #home{
   color: #6b6769;
   display: grid;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 40% 60%;
 }
 
 .home-image{
-  display: block;
+
   margin-left: auto;
   margin-right: auto;
   width: 80%;
@@ -315,8 +315,7 @@ side (fallback if image is missing) */
 /*stage 5*/
 #dis {
   font-size: 15px;
-  color: #524039fd
-  ;
+  color: #524039fd;
   font-family: "Verdana", sans-serif;
   display: grid;
   justify-content: center;
@@ -345,34 +344,63 @@ side (fallback if image is missing) */
   
 }
 #story {
-  font-size: 15px;
-  color: #524039fd
-  ;
+  font-size: 10px;
+  color: #524039fd;
   font-family: "Verdana", sans-serif;
   display: grid;
-  justify-content: center;
-  text-align: center;
   grid-template-columns: 15% 70% 15%;
-  grid-template-rows: 10% 90%;
-  row-gap: 40px;
+  grid-template-rows: 0.5fr 0.1fr 0.5fr 0.1fr 1fr 0.1fr 1fr;
+  row-gap: 30px;
+  justify-items: center;
 }
 
-#story>p{
+#sp1{
   text-align: left;
   grid-column: 2;
   grid-row: 1;
 }
-
-#movie{
-  text-align: left;
+.photoslides1{
+  text-align: center;
   grid-column: 2;
   grid-row: 2;
 }
+#sp2{
+  text-align: left;
+  grid-column: 2;
+  grid-row: 3;
+}
+.photoslides2{
+  text-align: center;
+  grid-column: 2;
+  grid-row: 4;
+}
+#sp3{
+  text-align: left;
+  grid-column: 2;
+  grid-row: 5;
+}
+.photoslides3{
+  text-align: center;
+  grid-column: 2;
+  grid-row: 6;
+}
+#sp4{
+  text-align: left;
+  grid-column: 2;
+  grid-row: 7;
+}
 
-.photoSlides2, .photoSlides1, .photoSlides3{
+
+.photoslides2, .photoslides1, .photoslides3{
   text-align: center;
   border: #76323F 3px solid ;
   border-radius: 1px;
+  width: 250px;
+  height: 160px;
+}
+.story-img1>img,.story-img2>img,.story-img3>img{
+  width: 220px;
+  height: 140px;
 }
 
 .left_button ,.right_button{
@@ -382,9 +410,63 @@ side (fallback if image is missing) */
   border-radius: 5px;
 }
 
+/*==========================================*/
+/* tablet*/
 @media screen and (min-width: 850px){
 
+ /* story */ 
+  #story {
+    grid-template-columns: 10% 30% 5% 40% 10%;
+    grid-template-rows: 0.3fr 0.8fr 1fr 1fr;
+  }
+  
+  #story>p{
+    border: #76323F 1px dashed;
+    padding: 1em;
+  }
+  #sp1{
+    text-align: left;
+    grid-column: 2 / span 3;
+    grid-row: 1;
+  }
 
+  #sp2{
+    text-align: left;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .photoslides1{
+    text-align: center; 
+    grid-column: 4; 
+    grid-row: 2;
+  }
+  .photoslides2{
+    text-align: center;
+    grid-column: 2;
+    grid-row: 3;
+  }
+  #sp3{
+    text-align: left;
+    grid-column: 4;
+    grid-row: 3;
+  }
+  .photoslides3{
+    text-align: center;
+    grid-column: 4;
+    grid-row: 4;
+  }
+  #sp4{
+    text-align: left;
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .photoslides2, .photoslides1, .photoslides3{
+    width: 300px;
+    height: 200px;
+  }
+  
+ /* ======================================================== */ 
 header:not(div>header){
   flex-direction: row;
   width: 100%;
